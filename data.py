@@ -354,7 +354,7 @@ class Data(torch.utils.data.Dataset):
                     audio.cpu().numpy(), self.sampling_rate,
                     self.filter_length, self.hop_length, self.f0_min,
                     self.f0_max)
-                print("saving f0 to {}".format(f0_path))
+                #print("saving f0 to {}".format(f0_path))
                 torch.save({'f0': f0,
                             'voiced_mask': voiced_mask,
                             'p_voiced': p_voiced}, f0_path)
